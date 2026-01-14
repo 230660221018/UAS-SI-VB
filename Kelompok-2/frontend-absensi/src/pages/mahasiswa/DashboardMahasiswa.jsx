@@ -15,7 +15,7 @@ import {
   WifiOff,
 } from "lucide-react";
 
-/* ===== STAT CARD ===== */
+/* STAT CARD */
 function StatCard({ icon: Icon, label, value }) {
   return (
     <div className="mhs-stat-card">

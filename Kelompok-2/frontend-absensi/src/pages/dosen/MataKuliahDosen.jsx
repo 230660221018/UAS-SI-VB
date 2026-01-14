@@ -12,7 +12,7 @@ export default function MataKuliahPage() {
     });
   }, []);
 
-  /* ===== DOWNLOAD REKAP PDF (SEMUA PERTEMUAN) ===== */
+  /* DOWNLOAD REKAP PDF (SEMUA PERTEMUAN)*/
   const downloadRekapAbsensi = async (courseId, courseCode) => {
     try {
       const res = await api.get(
@@ -85,8 +85,7 @@ export default function MataKuliahPage() {
                     Total Pertemuan: <b>{c.totalSessions}</b>
                   </p>
                 </div>
-
-                {/* ⬇️ INI FIX UTAMANYA */}
+                
                 <button
                   className="btn-recap"
                   onClick={() =>

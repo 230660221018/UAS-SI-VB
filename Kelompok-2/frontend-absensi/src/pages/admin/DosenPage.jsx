@@ -94,7 +94,7 @@ export default function DosenPage() {
           </div>
         </header>
 
-        {/* TOTAL + TAMBAH (SEJAJAR & KONSISTEN) */}
+        {/* TOTAL + TAMBAH */}
         <section className="stat-action-row">
           <div className="mini-stat">
             <span>Total Dosen</span>

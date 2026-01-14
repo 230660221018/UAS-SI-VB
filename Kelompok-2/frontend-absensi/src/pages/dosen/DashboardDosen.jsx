@@ -11,7 +11,7 @@ import {
   GraduationCap,
 } from "lucide-react";
 
-/* ===== STAT CARD ===== */
+/* STAT CARD */
 function StatCard({ icon: Icon, label, value }) {
   return (
     <div className="stat-card">
@@ -48,13 +48,12 @@ export default function DashboardDosen() {
 
   const { dosen, stats, courses } = data;
 
-  /* ===== HITUNG PROGRESS ===== */
+  /* HITUNG PROGRESS */
   const rawProgress =
     stats.maxMeetings > 0
       ? (stats.activeMeeting / stats.maxMeetings) * 100
       : 0;
 
-  // 🔥 FIX VISUAL: Biar progress bar tetap kelihatan
   const progressPercent =
     rawProgress === 0 && stats.activeSessions > 0
       ? 2

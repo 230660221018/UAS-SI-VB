@@ -8,7 +8,7 @@ export default function SesiAbsensiDosen() {
   const [activeSession, setActiveSession] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  /* ================= FETCH DATA ================= */
+  /* FETCH DATA */
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -29,12 +29,12 @@ export default function SesiAbsensiDosen() {
     fetchData();
   }, []);
 
-  /* ================= CEK COURSE AKTIF ================= */
+  /* CEK COURSE AKTIF */
   const isActiveCourse = (courseId) => {
     return activeSession && activeSession.courseId === courseId;
   };
 
-  /* ================= BUKA SESI ================= */
+  /*  BUKA SESI  */
   const bukaSesi = async (courseId) => {
     try {
       const res = await api.post("/dosen/session", { courseId });
@@ -45,7 +45,7 @@ export default function SesiAbsensiDosen() {
     }
   };
 
-  /* ================= TUTUP SESI ================= */
+  /* TUTUP SESI */
   const tutupSesi = async (sessionId) => {
     try {
       await api.patch(`/dosen/session/${sessionId}/close`);
@@ -56,7 +56,7 @@ export default function SesiAbsensiDosen() {
     }
   };
 
-  /* ================= DOWNLOAD PDF ================= */
+  /* DOWNLOAD PDF */
   const downloadPDF = async (sessionId) => {
     try {
       const res = await api.get(
@@ -92,13 +92,13 @@ export default function SesiAbsensiDosen() {
     <main className="dosen-content-wrapper">
       <div className="dosen-content">
         <div className="sesi-absensi">
-        {/* ================= HEADER ================= */}
+        {/* HEADER */}
         <header className="dosen-header">
           <h1>Sesi Absensi</h1>
           <p>Kelola sesi absensi per mata kuliah</p>
         </header>
 
-        {/* ================= SESI AKTIF ================= */}
+        {/* SESI AKTIF */}
         {activeSession && (
           <div className="active-session-card">
             <h3>Sesi Absensi Aktif</h3>
@@ -127,7 +127,7 @@ export default function SesiAbsensiDosen() {
           </div>
         )}
 
-        {/* ================= DAFTAR MATA KULIAH ================= */}
+        {/* DAFTAR MATA KULIAH */}
         <section className="course-grid">
           {courses.length === 0 && (
             <p className="empty">Belum ada mata kuliah</p>
@@ -157,7 +157,7 @@ export default function SesiAbsensiDosen() {
                 </div>
               </div>
 
-              {/* ===== BUTTON ===== */}
+              {/* BUTTON */}
               <button
                 className={`btn ${
                   isActiveCourse(c.id)

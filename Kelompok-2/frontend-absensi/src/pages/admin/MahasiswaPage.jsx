@@ -93,7 +93,7 @@ export default function MahasiswaPage() {
           </div>
         </header>
 
-        {/* TOTAL + TAMBAH (SEJAJAR) */}
+        {/* TOTAL + TAMBAH */}
         <section className="stat-action-row">
           <div className="mini-stat">
             <span>Total Mahasiswa</span>

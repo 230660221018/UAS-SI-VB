@@ -35,7 +35,7 @@ export const getDashboardDosen = async (req, res) => {
 
     const activeSessions = activeSession ? 1 : 0;
 
-    /* ===== TOTAL SESSION (GLOBAL – TETAP DIPERTAHANKAN) ===== */
+    /* ===== TOTAL SESSION ===== */
     const totalSessions = await prisma.absenceSession.count({
       where: { teacherId: dosenId },
     });
@@ -73,7 +73,6 @@ export const getDashboardDosen = async (req, res) => {
         totalCourses,
         activeSessions,
 
-        // ⬇️ FIX UTAMA
         absensiHariIni: activeAttendance,
         activeMeeting,
         activeAttendance,
@@ -188,7 +187,7 @@ export const exportRecapPdf = async (req, res) => {
         teacher: true,
         attendance: {
           orderBy: {
-            createdAt: "asc", // ⬅️ BIAR TIDAK ACAK
+            createdAt: "asc", 
           },
           include: {
             user: true,

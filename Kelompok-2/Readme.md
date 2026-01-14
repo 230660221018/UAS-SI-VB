@@ -103,7 +103,7 @@ Keamanan:
 
 - Backend: Server lokal (Port 3000)
 - Frontend (Netlify):
-  https://sistem-absensi-digital.netlify.app
+  https://sistem-absen-digital.netlify.app
 
 ---
 
@@ -131,18 +131,5 @@ https://drive.google.com/drive/folders/1kLFpbEcSSHx--OqP6dccxNZkf7NJUnqZ
 | 6 | Syifa Nur Insani, Muhammad Andre Nugraha & Intan Kartika | UI/UX & Testing | Desain UI dashboard, testing, dan validasi sistem |
 | 7 | Syifa Nur Insani & Intan Kartika | Dokumentasi | Penyusunan README.md, API Docs, dan ERD |  
 
----
+---  
 
-## Akun Demo
-
-### Admin
-- intankartika@unsap.ac.id | admin123
-- admin@unsap.ac.id | admin123
-
-### Dosen
-- andre@unsap.ac.id | 123456
-- dosen@unsap.ac.id | 123
-
-### Mahasiswa
-- kikania@student.unsap.ac.id | 123456
-- syifa@student.unsap.ac.id | mhs123

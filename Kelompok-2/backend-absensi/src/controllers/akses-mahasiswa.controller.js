@@ -2,25 +2,17 @@ import prisma from "../prisma/client.js";
 import PDFDocument from "pdfkit";
 import path from "path";
 
-/**
- * =========================
- * DASHBOARD MAHASISWA
- * =========================
- */
+/* DASHBOARD MAHASISWA */
 export const getDashboardMahasiswa = async (req, res) => {
   try {
     const userId = req.user.id;
 
-    /* ======================
-       1️⃣ TOTAL MATA KULIAH
-    ====================== */
+    /* TOTAL MATA KULIAH */
     const totalMk = await prisma.enrollment.count({
       where: { userId },
     });
 
-    /* ======================
-       2️⃣ SESI AKTIF (MK YANG DIA AMBIL)
-    ====================== */
+    /* SESI AKTIF (MK YANG DIA AMBIL) */
     const activeSessions = await prisma.absenceSession.findMany({
       where: {
         isOpen: true,
@@ -41,9 +33,7 @@ export const getDashboardMahasiswa = async (req, res) => {
       orderBy: { startTime: "desc" },
     });
 
-    /* ======================
-       3️⃣ HITUNG HADIR & ALFA (BERDASARKAN SESI AKTIF)
-    ====================== */
+    /* HITUNG HADIR & ALFA (BERDASARKAN SESI AKTIF) */
     let hadir = 0;
     let alfa = 0;
 
@@ -60,9 +50,7 @@ export const getDashboardMahasiswa = async (req, res) => {
       alfa = activeSessionIds.length - hadir;
     }
 
-    /* ======================
-       4️⃣ RESPONSE FINAL (SIAP UI)
-    ====================== */
+    /* RESPONSE */
     res.json({
       totalMk,
       hadir,
@@ -87,12 +75,7 @@ export const getDashboardMahasiswa = async (req, res) => {
 };
 
 
-/**
- * =========================
- * SESI AKTIF MAHASISWA
- * (HANYA MK YANG DIA AMBIL)
- * =========================
- */
+/* SESI AKTIF MAHASISWA (HANYA MK YANG DIA AMBIL) */
 export const getActiveSessionMahasiswa = async (req, res) => {
   try {
     const userId = req.user.id;
@@ -136,11 +119,7 @@ export const getActiveSessionMahasiswa = async (req, res) => {
   }
 };
 
-/**
- * =========================
- * RIWAYAT ABSENSI MAHASISWA
- * =========================
- */
+/* RIWAYAT ABSENSI MAHASISWA */
 export const getMyAttendance = async (req, res) => {
   try {
     const userId = req.user.id;
@@ -243,7 +222,7 @@ export const getRiwayatAbsensiMahasiswa = async (req, res) => {
         teacher: {
           select: { name: true },
         },
-        attendance: { // ✅ BENAR
+        attendance: { 
           where: { userId },
           select: { createdAt: true },
         },
@@ -254,7 +233,7 @@ export const getRiwayatAbsensiMahasiswa = async (req, res) => {
     const result = sessions.map((s) => ({
       mataKuliah: s.course.name,
       kodeMk: s.course.code,
-      dosen: s.teacher?.name || "-", // ✅ SAFE
+      dosen: s.teacher?.name || "-", 
       tanggal: s.startTime.toISOString().split("T")[0],
       jam: `${s.startTime.toLocaleTimeString("id-ID", {
         hour: "2-digit",
@@ -275,11 +254,7 @@ export const getRiwayatAbsensiMahasiswa = async (req, res) => {
   }
 };
 
-/**
- * =========================
- * EXPORT PDF RIWAYAT ABSENSI
- * =========================
- */
+/* EXPORT PDF RIWAYAT ABSENSI */
 export const exportRiwayatAbsensiPDF = async (req, res) => {
   try {
     const userId = req.user.id;

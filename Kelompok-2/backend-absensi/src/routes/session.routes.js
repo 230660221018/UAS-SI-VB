@@ -11,7 +11,7 @@ const router = express.Router();
 router.post(
   "/open",
   authenticate,
-  authorizeRole("ADMIN"), // atau "DOSEN" sesuai enum kamu
+  authorizeRole("ADMIN"), // atau "DOSEN" 
   openSession
 );
 router.post(

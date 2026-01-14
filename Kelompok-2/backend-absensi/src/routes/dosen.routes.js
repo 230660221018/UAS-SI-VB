@@ -9,7 +9,7 @@ import {
   getRecapByCourse,
   getActiveSession,
   exportRecapPdf,
-  exportRecapByCoursePdf, // ⬅️ TAMBAHAN
+  exportRecapByCoursePdf, 
 } from "../controllers/dosenDashboard.controller.js";
 
 const router = express.Router();
@@ -26,7 +26,7 @@ router.get("/session/active", authMiddleware, isDosen, getActiveSession);
 router.get("/recap/:courseId", authMiddleware, isDosen, getRecapByCourse);
 
 /* ===== REKAP PDF ===== */
-// 🔹 1 SESI
+// 1 SESI
 router.get(
   "/recap/session/:sessionId/pdf",
   authMiddleware,
@@ -34,7 +34,7 @@ router.get(
   exportRecapPdf
 );
 
-// 🔹 1 MATA KULIAH (SEMUA PERTEMUAN)
+// 1 MATA KULIAH (SEMUA PERTEMUAN)
 router.get(
   "/recap/matakuliah/:courseId/pdf",
   authMiddleware,

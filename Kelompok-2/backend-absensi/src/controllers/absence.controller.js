@@ -3,11 +3,7 @@ import crypto from "crypto";
 
 const prisma = new PrismaClient();
 
-/**
- * =========================
- * DOSEN MEMBUKA SESSION ABSENSI
- * =========================
- */
+/* DOSEN MEMBUKA SESSION ABSENSI */
 export const createSession = async (req, res) => {
   try {
     const dosenId = req.user.id;
@@ -80,11 +76,7 @@ export const createSession = async (req, res) => {
   }
 };
 
-/**
- * =========================
- * DOSEN MENUTUP SESSION ABSENSI
- * =========================
- */
+/* DOSEN MENUTUP SESSION ABSENSI */
 export const closeSession = async (req, res) => {
   try {
     const dosenId = req.user.id;
@@ -136,11 +128,7 @@ export const closeSession = async (req, res) => {
   }
 };
 
-/**
- * =========================
- * MAHASISWA MELAKUKAN ABSENSI
- * =========================
- */
+/* MAHASISWA MELAKUKAN ABSENSI */
 export const attendance = async (req, res) => {
   try {
     const userId = req.user.id;
@@ -152,7 +140,7 @@ export const attendance = async (req, res) => {
       });
     }
 
-    // 🔍 Cari session AKTIF berdasarkan kode
+    // Cari session AKTIF berdasarkan kode
     const session = await prisma.absenceSession.findFirst({
       where: {
         code: code.toUpperCase(),
@@ -206,11 +194,7 @@ export const attendance = async (req, res) => {
 };
 
 
-/**
- * =========================
- * DOSEN MELIHAT REKAP ABSENSI
- * =========================
- */
+/* DOSEN MELIHAT REKAP ABSENSI */
 export const recapByCourse = async (req, res) => {
   try {
     const dosenId = req.user.id;

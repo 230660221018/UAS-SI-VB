@@ -9,9 +9,7 @@ body {
   color: #0f172a;
 }
 
-/* ======================================================
-   LAYOUT
-====================================================== */
+/* LAYOUT */
 .dosen-layout {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -19,9 +17,7 @@ body {
   overflow: hidden; /* ⬅️ penting */
 }
 
-/* ======================================================
-   SIDEBAR (DESKTOP DEFAULT)
-====================================================== */
+/* SIDEBAR (DESKTOP DEFAULT) */
 .sidebar {
   background: #ffffff;
   border-right: 1px solid #e5e7eb;
@@ -42,9 +38,7 @@ body {
   flex: 1;
 }
 
-/* ======================================================
-   BRAND
-====================================================== */
+/* BRAND */
 .sidebar-brand.with-logo {
   display: flex;
   align-items: center;
@@ -69,9 +63,7 @@ body {
   color: #64748b;
 }
 
-/* ======================================================
-   MENU
-====================================================== */
+/* MENU */
 .sidebar-menu {
   display: flex;
   flex-direction: column;
@@ -122,9 +114,7 @@ body {
   background: #1e3a8a;
 }
 
-/* ======================================================
-   LOGOUT
-====================================================== */
+/* LOGOUT */
 .sidebar-logout {
   margin-top: 18px;
   padding: 12px 14px;
@@ -147,9 +137,7 @@ body {
   background: #e2e8f0;
 }
 
-/* ======================================================
-   TOPBAR DOSEN
-====================================================== */
+/* TOPBAR DOSEN */
 .dosen-topbar {
   display: none;
   align-items: center;
@@ -193,9 +181,7 @@ body {
 }
 
 
-/* ======================================================
-   OVERLAY
-====================================================== */
+/* OVERLAY */
 .sidebar-overlay {
   position: fixed;
   inset: 0;
@@ -203,9 +189,7 @@ body {
   z-index: 40;
 }
 
-/* ======================================================
-   CONTENT
-====================================================== */
+/* CONTENT */
 .dosen-content {
   padding: 44px 52px;
   animation: fadeIn 0.35s ease;
@@ -229,9 +213,7 @@ body {
   }
 }
 
-/* ======================================================
-   RESPONSIVE (MOBILE)
-====================================================== */
+/* RESPONSIVE (MOBILE) */
 @media (max-width: 1024px) {
  .dosen-layout {
     grid-template-columns: 1fr;
@@ -243,7 +225,7 @@ body {
 
   .sidebar {
     position: fixed;
-    top: 56px; /* ⬅️ IKUT TINGGI TOPBAR */
+    top: 56px; /* MENGIKUTI TINGGI TOPBAR */
     left: 0;
     width: 260px;
     height: calc(100dvh - 56px);
@@ -265,27 +247,25 @@ body {
   }
 
   .sidebar-menu {
-    padding-top: 20px; /* ⬅️ BIAR MENU GA KETUTUP */
+    padding-top: 20px; 
   }
 
   .dosen-content {
     padding: 28px 22px;
-    padding-top: 64px; /* ⬅️ KOMPENSASI TOPBAR */
+    padding-top: 64px; 
   }
 }
 
-/* ======================================================
-   DOSEN DASHBOARD
-====================================================== */
+/* DOSEN DASHBOARD */
 
-/* ================= ROOT ================= */
+/* ROOT */
 .dosen-dashboard {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 .dosen-dashboard .dosen-header {
   padding: 30px 34px;
   border-radius: 20px;
@@ -314,7 +294,7 @@ body {
   color: #475569;
 }
 
-/* ================= STAT GRID ================= */
+/* STAT GRID */
 .dosen-dashboard .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -375,7 +355,7 @@ body {
   color: #0f172a;
 }
 
-/* ================= PROGRESS ================= */
+/* PROGRESS */
 .dosen-dashboard .progress-wrapper {
   padding: 26px 30px;
   border-radius: 20px;
@@ -445,7 +425,7 @@ body {
   color: #1e40af;
 }
 
-/* ================= COURSE ================= */
+/* COURSE */
 .dosen-dashboard .course-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -510,7 +490,7 @@ body {
   line-height: 1.6;
 }
 
-/* ================= EMPTY ================= */
+/* EMPTY */
 .empty {
   padding: 36px;
   text-align: center;
@@ -518,7 +498,7 @@ body {
   color: #64748b;
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .dosen-dashboard {
     gap: 26px;
@@ -532,7 +512,7 @@ body {
 
 /* DOSEN – MATA KULIAH */
 
-/* ================= HEADER ================= */
+/* HEADER */
 .wow-header {
   padding: 30px 34px;
   border-radius: 20px;
@@ -562,14 +542,14 @@ body {
   color: #475569;
 }
 
-/* ================= GRID ================= */
+/* GRID */
 .wow-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-/* ================= CARD ================= */
+/* CARD */
 .wow-card {
   position: relative;
   padding: 24px 26px;
@@ -597,7 +577,7 @@ body {
     0 20px 44px rgba(15, 23, 42, 0.14);
 }
 
-/* ================= CARD TOP ================= */
+/* CARD TOP */
 .wow-top h3 {
   font-size: 16px;
   font-weight: 700;
@@ -609,7 +589,7 @@ body {
   color: #64748b;
 }
 
-/* ================= PROGRESS CIRCLE ================= */
+/* PROGRESS CIRCLE */
 .progress-circle {
   width: 110px;
   height: 110px;
@@ -643,7 +623,7 @@ body {
   color: #64748b;
 }
 
-/* ================= INFO ================= */
+/* INFO */
 .wow-info {
   display: flex;
   flex-direction: column;
@@ -655,7 +635,7 @@ body {
   color: #334155;
 }
 
-/* ================= STATUS ================= */
+/* STATUS */
 .status {
   width: fit-content;
   padding: 5px 14px;
@@ -674,7 +654,7 @@ body {
   color: #065f46;
 }
 
-/* ================= BUTTON ================= */
+/* BUTTON */
 .btn-recap {
   margin-top: auto;
   padding: 10px 14px;
@@ -703,7 +683,7 @@ body {
   box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .wow-grid {
     grid-template-columns: 1fr;
@@ -722,7 +702,7 @@ body {
 
 /* DOSEN – SESI ABSENSI*/
 
-/* ================= HEADER ================= */
+/* HEADER */
 .sesi-absensi .dosen-header {
   margin-bottom: 32px;
 }
@@ -747,7 +727,7 @@ body {
   color: #475569;
 }
 
-/* ================= ACTIVE SESSION CARD ================= */
+/* ACTIVE SESSION CARD */
 .sesi-absensi .active-session-card {
   background:
     linear-gradient(
@@ -790,7 +770,7 @@ body {
   border: 1px dashed #c7d2fe;
 }
 
-/* ================= SESSION ACTION ================= */
+/* SESSION ACTION */
 .sesi-absensi .session-actions {
   display: flex;
   gap: 14px;
@@ -808,7 +788,7 @@ body {
   transition: all 0.25s ease;
 }
 
-/* TUTUP SESI → CANCEL (ABU) */
+/* TUTUP SESI */
 .sesi-absensi .btn-cancel {
   background: #e5e7eb;
   color: #334155;
@@ -834,14 +814,14 @@ body {
   transform: translateY(-1px);
 }
 
-/* ================= GRID MATA KULIAH ================= */
+/* GRID MATA KULIAH */
 .sesi-absensi .course-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 22px;
 }
 
-/* ================= COURSE CARD ================= */
+/* COURSE CARD */
 .sesi-absensi .course-card {
   padding: 22px 24px;
   border-radius: 18px;
@@ -879,7 +859,7 @@ body {
   color: #64748b;
 }
 
-/* ================= PROGRESS ================= */
+/* PROGRESS */
 .sesi-absensi .progress-wrapper {
   margin-top: 8px;
 }
@@ -912,9 +892,9 @@ body {
   transition: width 0.45s ease;
 }
 
-/* ================= COURSE ACTION BUTTON ================= */
+/* COURSE ACTION BUTTON */
 
-/* BUKA SESI → BIRU */
+/* BUKA SESI */
 .sesi-absensi.btn-primary {
   margin-top: auto;
   background:
@@ -937,7 +917,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* SESI AKTIF → HIJAU */
+/* SESI AKTIF */
 .sesi-absensi .btn-active {
   margin-top: auto;
   background: #5964e1;
@@ -953,7 +933,7 @@ body {
   cursor: not-allowed;
 }
 
-/* ================= EMPTY ================= */
+/* EMPTY */
 .sesi-absensi .empty {
   padding: 36px;
   text-align: center;
@@ -961,7 +941,7 @@ body {
   color: #64748b;
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .sesi-absensi .session-actions {
     flex-direction: column;

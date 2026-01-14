@@ -26,25 +26,25 @@ export default function RiwayatAbsensi() {
     fetchRiwayat();
   }, []);
 
-  /* ================= FILTER ================= */
+  /* FILTER */
   const filteredData = useMemo(() => {
     if (filterMk === "ALL") return data;
     return data.filter((d) => d.mataKuliah === filterMk);
   }, [data, filterMk]);
 
-  /* ================= PAGINATION ================= */
+  /* PAGINATION */
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
   const paginatedData = useMemo(() => {
     const start = (currentPage - 1) * ITEMS_PER_PAGE;
     return filteredData.slice(start, start + ITEMS_PER_PAGE);
   }, [filteredData, currentPage]);
 
-  /* ================= LIST MK ================= */
+  /* LIST MK */
   const mataKuliahList = useMemo(() => {
     return ["ALL", ...new Set(data.map((d) => d.mataKuliah))];
   }, [data]);
 
-  /* ================= EXPORT PDF ================= */
+  /* EXPORT PDF */
   const exportPDF = async () => {
     try {
       const params =
@@ -80,7 +80,7 @@ export default function RiwayatAbsensi() {
           <p>Memuat data...</p>
         ) : (
           <>
-            {/* ===== ACTIONS ===== */}
+            {/* ACTIONS */}
             <div className="table-actions">
               <select
                 value={filterMk}
@@ -102,7 +102,7 @@ export default function RiwayatAbsensi() {
               </button>
             </div>
 
-            {/* ===== TABLE ===== */}
+            {/* TABLE */}
             <div className="table-card">
               <table className="table">
                 <thead>
@@ -144,7 +144,7 @@ export default function RiwayatAbsensi() {
               </table>
             </div>
 
-            {/* ===== PAGINATION ===== */}
+            {/* PAGINATION */}
             <div className="pagination">
               <button
                 className="icon-btn"

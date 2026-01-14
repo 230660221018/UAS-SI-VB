@@ -20,10 +20,5 @@ router.get("/session/active", authMiddleware, isMahasiswa, getActiveSessionMahas
 router.get("/attendance", authMiddleware, isMahasiswa, getMyAttendance);
 router.get("/statistik-mk", authMiddleware, authorizeRole("MAHASISWA"), getStatistikPerMk);
 router.get("/riwayat-absensi", authMiddleware, authorizeRole("MAHASISWA"), getRiwayatAbsensiMahasiswa);
-router.get(
-  "/riwayat-absensi/pdf",
-  authMiddleware,
-  authorizeRole("MAHASISWA"),
-  exportRiwayatAbsensiPDF
-);
+router.get("/riwayat-absensi/pdf", authMiddleware, authorizeRole("MAHASISWA"), exportRiwayatAbsensiPDF);
 export default router;

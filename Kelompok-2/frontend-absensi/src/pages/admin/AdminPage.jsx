@@ -101,7 +101,7 @@ export default function AdminPage() {
           </div>
         </header>
 
-        {/* TOTAL + TAMBAH (SEJAJAR & KONSISTEN) */}
+        {/* TOTAL + TAMBAH */}
         <section className="stat-action-row">
           <div className="mini-stat">
             <span>Total Admin</span>

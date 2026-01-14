@@ -5,7 +5,6 @@ import "../../styles/mahasiswa.css";
 export default function ActiveSessionCard({ session }) {
   const navigate = useNavigate();
 
-  // 🔐 FALLBACK AMAN (INI KUNCI)
   const kodeMk =
     session.courseCode ||
     session.kodeMk ||

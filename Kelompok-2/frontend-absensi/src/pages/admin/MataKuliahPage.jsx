@@ -52,7 +52,7 @@ export default function MataKuliahPage() {
   const payload = {
     code: form.code,
     name: form.name,
-    dosenId: Number(form.dosenId), // 🔥 FIX UTAMA
+    dosenId: Number(form.dosenId), 
   };
 
   try {

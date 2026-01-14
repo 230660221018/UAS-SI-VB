@@ -1,6 +1,4 @@
-/* ======================================================
-   RESET
-====================================================== */
+/* RESET */
 * {
   box-sizing: border-box;
 }
@@ -12,9 +10,7 @@ body {
   font-family: "Inter", system-ui, sans-serif;
 }
 
-/* ======================================================
-   LAYOUT
-====================================================== */
+/* LAYOUT */
 .mahasiswa-layout {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -22,9 +18,7 @@ body {
   background: #f4f6f8;
 }
 
-/* ======================================================
-   SIDEBAR (DESKTOP)
-====================================================== */
+/* SIDEBAR (DESKTOP) */
 .mahasiswa-sidebar {
   background: #ffffff;
   border-right: 1px solid #e5e7eb;
@@ -43,9 +37,7 @@ body {
   flex: 1;
 }
 
-/* ======================================================
-   BRAND
-====================================================== */
+/* BRAND */
 .mahasiswa-sidebar-brand {
   display: flex;
   align-items: center;
@@ -70,9 +62,7 @@ body {
   color: #64748b;
 }
 
-/* ======================================================
-   MENU
-====================================================== */
+/* MENU */
 .mahasiswa-sidebar-menu {
   display: flex;
   flex-direction: column;
@@ -120,9 +110,7 @@ body {
   background: #1e3a8a;
 }
 
-/* ======================================================
-   LOGOUT
-====================================================== */
+/* LOGOUT */
 .mahasiswa-sidebar-logout {
   margin-top: 18px;
   padding: 12px 14px;
@@ -141,9 +129,7 @@ body {
   background: #e2e8f0;
 }
 
-/* ======================================================
-   CONTENT
-====================================================== */
+/* CONTENT */
 .mahasiswa-content {
   height: 100%;
   overflow-y: auto;
@@ -151,9 +137,7 @@ body {
   padding: 32px;
 }
 
-/* ======================================================
-   MOBILE TOPBAR
-====================================================== */
+/* MOBILE TOPBAR */
 .mahasiswa-topbar {
   display: none;
   align-items: center;
@@ -183,9 +167,7 @@ body {
   font-size: 16px;
 }
 
-/* ======================================================
-   HAMBURGER
-====================================================== */
+/* HAMBURGER */
 .mahasiswa-sidebar-toggle {
   width: 40px;
   height: 40px;
@@ -204,9 +186,7 @@ body {
   color: #1e3a8a;                       
 }
 
-/* ======================================================
-   OVERLAY
-====================================================== */
+/* OVERLAY */
 .mahasiswa-sidebar-overlay {
   position: fixed;
   inset: 0;
@@ -214,9 +194,7 @@ body {
   z-index: 40;
 }
 
-/* ======================================================
-   RESPONSIVE
-====================================================== */
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   .mahasiswa-layout {
     grid-template-columns: 1fr;
@@ -254,11 +232,9 @@ body {
   }
 }
 
-/* ======================================================
-   DASHBOARD MAHASISWA (AMAN SIDEBAR)
-====================================================== */
+/* DASHBOARD MAHASISWA (AMAN SIDEBAR) */
 
-/* ================= HEADER ================= */
+/* HEADER */
 .mhs-header {
   background: linear-gradient(135deg, #1e3a8a, #2563eb);
   border-radius: 18px;
@@ -281,7 +257,7 @@ body {
   opacity: 0.9;
 }
 
-/* ================= STAT ================= */
+/* STAT */
 .mhs-stats-grid {
   margin-top: 24px;
   display: grid;
@@ -327,9 +303,7 @@ body {
   color: #0f172a;
 }
 
-/* ======================================================
-   SECTION (UMUM DASHBOARD)
-====================================================== */
+/* SECTION (UMUM DASHBOARD) */
 
 .mhs-section {
   margin-top: 28px;
@@ -339,7 +313,7 @@ body {
   border: 1px solid #e5e7eb;
 }
 
-/* ================= HEADER SECTION ================= */
+/* HEADER SECTION  */
 
 .section-header {
   display: flex;
@@ -367,7 +341,7 @@ body {
   color: #0f172a;
 }
 
-/* ================= STATUS BADGE ================= */
+/* STATUS BADGE */
 
 .session-status {
   display: inline-flex;
@@ -401,18 +375,16 @@ body {
 }
 
 
-/* ======================================================
-   SESI ABSENSI AKTIF – PROFESSIONAL ACADEMIC
-====================================================== */
+/* SESI ABSENSI AKTIF */
 
-/* ================= GRID ================= */
+/* GRID */
 .active-session-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
 }
 
-/* ================= CARD ================= */
+/* CARD */
 .mahasiswa-content .active-session-card {
   position: relative;
   background: #ffffff;
@@ -431,7 +403,7 @@ body {
   box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
 }
 
-/* ================= BADGE ================= */
+/* BADGE */
 .mahasiswa-content .active-session-card .badge {
   position: absolute;
   top: 18px;
@@ -445,7 +417,7 @@ body {
   letter-spacing: 0.4px;
 }
 
-/* ================= TITLE ================= */
+/* TITLE */
 .mahasiswa-content .active-session-card h3 {
   margin: 0;
   font-size: 18px;
@@ -454,7 +426,7 @@ body {
   line-height: 1.35;
 }
 
-/* ================= INFO ================= */
+/* INFO */
 .session-info {
   display: flex;
   flex-direction: column;
@@ -496,7 +468,7 @@ body {
   line-height: 1.4;
 }
 
-/* ================= BUTTON ================= */
+/* BUTTON */
 .mahasiswa-content .active-session-card .btn {
   margin-top: 6px;
   width: 100%;
@@ -516,7 +488,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* ================= EMPTY STATE ================= */
+/* EMPTY STATE */
 .empty-session-card {
   padding: 48px 24px;
   background: #ffffff;
@@ -542,9 +514,7 @@ body {
   font-size: 13px;
 }
 
-/* ======================================================
-   STATISTIK MK
-====================================================== */
+/* STATISTIK MK */
 
 .mhs-mk-grid {
   margin-top: 14px;
@@ -596,7 +566,7 @@ body {
   color: #475569;
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .mhs-header {
     flex-direction: column;
@@ -609,11 +579,9 @@ body {
   }
 }
 
-/* ======================================================
-   ABSEN MAHASISWA – MODERN PRODUCT UI
-====================================================== */
+/* ABSEN MAHASISWA */
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 .mahasiswa-header {
   margin-bottom: 36px;
@@ -634,7 +602,7 @@ body {
   line-height: 1.6;
 }
 
-/* ================= CARD WRAPPER ================= */
+/* CARD WRAPPER */
 
 .absen-card {
   max-width: 520px;
@@ -648,7 +616,7 @@ body {
     0 8px 20px rgba(15, 23, 42, 0.08);
 }
 
-/* ================= FORM ================= */
+/* FORM */
 
 .absen-card form {
   display: flex;
@@ -663,7 +631,7 @@ body {
   color: #334155;
 }
 
-/* ================= INPUT (FOCUS POINT) ================= */
+/* INPUT (FOCUS POINT) */
 
 .absen-card input {
   height: 58px;
@@ -691,7 +659,7 @@ body {
   box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.18);
 }
 
-/* ================= BUTTON ================= */
+/* BUTTON */
 
 .absen-card .btn {
   height: 56px;
@@ -719,7 +687,7 @@ body {
   cursor: not-allowed;
 }
 
-/* ================= ALERT ================= */
+/* ALERT */
 
 .alert {
   margin-top: 22px;
@@ -743,7 +711,7 @@ body {
   border: 1px solid #fecaca;
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 
 @media (max-width: 640px) {
   .absen-card {
@@ -755,9 +723,7 @@ body {
   }
 }
 
-/* ===============================
-   RIWAYAT ABSENSI – MAHASISWA
-   =============================== */
+/* RIWAYAT ABSENSI – MAHASISWA */
 
 .mahasiswa-content h2 {
   font-size: 22px;
@@ -772,9 +738,7 @@ body {
   margin-bottom: 24px;
 }
 
-/* ===============================
-   ACTION BAR (FILTER & PDF)
-   =============================== */
+/* ACTION BAR (FILTER & PDF) */
 
 .table-actions {
   display: flex;
@@ -800,20 +764,18 @@ body {
   border-color: #2563eb;
 }
 
-/* ===============================
-   PDF BUTTON
-   =============================== */
+/* PDF BUTTON */
 
 .btn-export {
   display: inline-flex;
   align-items: center;
   gap: 8px;
 
-  width: auto;              /* ⬅️ KUNCI UTAMA */
-  max-width: fit-content;   /* ⬅️ BIAR TIDAK MELEBAR */
+  width: auto;              
+  max-width: fit-content;   
   white-space: nowrap;
 
-  padding: 8px 12px;        /* ⬅️ DIPERKECIL */
+  padding: 8px 12px;        
   border-radius: 10px;
   background: #dc2626;
   color: #ffffff;
@@ -833,9 +795,7 @@ body {
   stroke-width: 2.2;
 }
 
-/* ===============================
-   TABLE CARD
-   =============================== */
+/* TABLE CARD */
 
 .table-card {
   background: #ffffff;
@@ -845,9 +805,7 @@ body {
   overflow-x: auto;
 }
 
-/* ===============================
-   TABLE
-   =============================== */
+/* TABLE */
 
 .table {
   width: 100%;
@@ -885,9 +843,7 @@ body {
   color: #64748b;
 }
 
-/* ===============================
-   BADGE STATUS
-   =============================== */
+/* BADGE STATUS */
 
 .badge {
   display: inline-block;
@@ -909,9 +865,7 @@ body {
   color: #991b1b;
 }
 
-/* ===============================
-   PAGINATION
-   =============================== */
+/* PAGINATION */
 
 .pagination {
   margin-top: 22px;
@@ -931,9 +885,7 @@ body {
   color: #0f172a;
 }
 
-/* ===============================
-   ICON BUTTON (PREV / NEXT)
-   =============================== */
+/* ICON BUTTON (PREV / NEXT) */
 
 .icon-btn {
   width: 38px;
@@ -958,9 +910,7 @@ body {
   cursor: not-allowed;
 }
 
-/* ===============================
-   RESPONSIVE
-   =============================== */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .table-actions {

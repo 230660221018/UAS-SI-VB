@@ -1,6 +1,4 @@
-/* ======================================================
-   RESET & BASE
-====================================================== */
+/* RESET & BASE */
 * {
   box-sizing: border-box;
 }
@@ -18,9 +16,7 @@ html, body {
 }
 
 
-/* ======================================================
-   LAYOUT
-====================================================== */
+/* LAYOUT */
 .admin-layout {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -29,9 +25,7 @@ html, body {
   overflow: hidden; 
 }
 
-/* ======================================================
-   SIDEBAR (DESKTOP DEFAULT)
-====================================================== */
+/* SIDEBAR (DESKTOP DEFAULT) */
 .sidebar {
   background: #ffffff;
   border-right: 1px solid #e5e7eb;
@@ -51,9 +45,7 @@ html, body {
   flex: 1;
 }
 
-/* ======================================================
-   BRAND
-====================================================== */
+/* BRAND */
 .sidebar-brand.with-logo {
   display: flex;
   align-items: center;
@@ -78,9 +70,7 @@ html, body {
   color: #64748b;
 }
 
-/* ======================================================
-   MENU
-====================================================== */
+/* MENU */
 .sidebar-menu {
   display: flex;
   flex-direction: column;
@@ -128,9 +118,7 @@ html, body {
   background: #1e3a8a;
 }
 
-/* ======================================================
-   LOGOUT
-====================================================== */
+/* LOGOUT */
 .sidebar-logout {
   margin-top: 18px;
   padding: 12px 14px;
@@ -150,9 +138,7 @@ html, body {
   background: #e2e8f0;
 }
 
-/* ======================================================
-   HAMBURGER BUTTON
-====================================================== */
+/* HAMBURGER BUTTON */
 .sidebar-toggle {
   display: none;
   position: absolute;
@@ -171,9 +157,7 @@ html, body {
 }
 
 
-/* ======================================================
-   OVERLAY
-====================================================== */
+/* OVERLAY */
 .sidebar-overlay {
   position: fixed;
   inset: 0;
@@ -181,9 +165,7 @@ html, body {
   z-index: 40;
 }
 
-/* ======================================================
-   MAIN CONTENT
-====================================================== */
+/* MAIN CONTENT */
 .admin-content.dashboard {
   padding: 44px 52px;
   animation: fadeIn 0.35s ease;
@@ -200,9 +182,7 @@ html, body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ======================================================
-   MOBILE TOPBAR
-====================================================== */
+/* MOBILE TOPBAR */
 .admin-topbar {
   display: none;
   align-items: center;
@@ -233,9 +213,7 @@ html, body {
   font-size: 16px;
 }
 
-/* ======================================================
-   DASHBOARD HEADER
-====================================================== */
+/* DASHBOARD HEADER */
 .dashboard-header-academic h1 {
   font-size: 30px;
   font-weight: 700;
@@ -249,9 +227,7 @@ html, body {
   max-width: 620px;
 }
 
-/* ======================================================
-   STAT CARDS
-====================================================== */
+/* STAT CARDS */
 .dashboard-stat-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -296,9 +272,7 @@ html, body {
 .stat-academic.green { border-left: 4px solid #16a34a; }
 .stat-academic.purple { border-left: 4px solid #6366f1; }
 
-/* ======================================================
-   CHART
-====================================================== */
+/* CHART */
 .dashboard-chart-card {
   background: #ffffff;
   border-radius: 22px;
@@ -317,9 +291,7 @@ html, body {
   color: #64748b;
 }
 
-/* ======================================================
-   RESPONSIVE (MOBILE)
-====================================================== */
+/* RESPONSIVE (MOBILE) */
 @media (max-width: 1024px) {
   .dashboard-header-academic {
     padding-top: 0;   /* ⬅️ ini kuncinya */
@@ -331,7 +303,7 @@ html, body {
   .sidebar {
     position: fixed;
     padding-top: 16px;
-    top: 56px; /* ⬅️ HEADER HEIGHT */
+    top: 56px; /* HEADER HEIGHT */
     left: 0;
     width: 260px;
     height: calc(100dvh - 56px);
@@ -344,7 +316,7 @@ html, body {
     -webkit-overflow-scrolling: touch;
   }
   .sidebar-menu {
-    padding-top: 60px; /* ⬅️ kunci masalah */
+    padding-top: 60px; 
   }
   .sidebar.open {
     transform: translateX(0);

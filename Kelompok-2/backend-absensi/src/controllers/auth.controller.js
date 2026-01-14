@@ -75,7 +75,7 @@ export const registerMahasiswa = async (req, res) => {
 };
 
 // ==============================
-// LOGIN (FIXED & FINAL)
+// LOGIN (FIXED)
 // ==============================
 export const login = async (req, res) => {
   try {
@@ -88,7 +88,6 @@ export const login = async (req, res) => {
       role: user.role,
     });
 
-    // ⬇️ INI KUNCI PERBAIKAN
     res.status(200).json({
       token,
       user: {
