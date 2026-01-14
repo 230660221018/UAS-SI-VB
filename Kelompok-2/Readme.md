@@ -103,7 +103,7 @@ Keamanan:
 
 - Backend: Server lokal (Port 3000)
 - Frontend (Netlify):
-  https://sistem-absensi-digital.netlify.app
+  https://sistem-absen-digital.netlify.app
 
 ---
 
