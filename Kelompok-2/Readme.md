@@ -132,8 +132,8 @@ https://drive.google.com/drive/folders/1kLFpbEcSSHx--OqP6dccxNZkf7NJUnqZ
 | 3 | Kikania Zahra, Intan Kartika & Muhammad Andre| Auth Specialist | Implementasi JWT, hashing password, dan middleware |
 | 4 | Kikania Zahra, Syifa Nur Insani & Intan Kartika | CRUD Specialist | Implementasi rute resource (Course, Session, Attendance) |
 | 5 | Muhammad Andre & Intan Kartika | DevOps / Deployment | Setup server lokal dan deployment Netlify |
-| 6 | Syifa Nur Insani, Muhammad Andre Nugraha & Intan Kartika | UI/UX & Testing | Desain UI dashboard, testing, dan validasi sistem |
-| 7 | Syifa Nur Insani & Intan Kartika | Dokumentasi | Penyusunan README.md, API Docs, dan ERD |  
+| 6 | Syifa Nur Insani, Muhammad Andre & Intan Kartika | UI/UX & Testing | Desain UI dashboard, testing, dan validasi sistem |
+| 7 | Syifa Nur Insani & Intan Kartika | Dokumentasi | Penyusunan README.md, API Docs |  
 
 ---  
 
