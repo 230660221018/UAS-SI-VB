@@ -10,10 +10,23 @@ Tujuan pengembangan sistem:
 - Mempermudah monitoring kehadiran
 - Mendukung sistem akademik berbasis teknologi
 
-Peran pengguna dalam sistem:
-- Admin
-- Dosen
-- Mahasiswa
+## **Peran Pengguna (User Roles)**
+
+Aplikasi memiliki **3 peran utama pengguna**, yaitu **Admin**, **Dosen**, dan **Mahasiswa**, dengan hak akses sebagai berikut:
+
+### 1. **Admin**
+- **Mengelola data mahasiswa, dosen, dan mata kuliah** melalui operasi CRUD (Create, Read, Update, Delete).
+- Bertanggung jawab atas **pengaturan dan pengelolaan sistem secara keseluruhan**.
+
+### 2. **Dosen**
+- **Membuka sesi absensi secara real-time**, menghasilkan **kode absensi unik** untuk keamanan.
+- **Melihat daftar hadir mahasiswa** pada setiap pertemuan.
+- **Mengunduh rekap absensi** dalam bentuk **PDF**, baik **per pertemuan** maupun **rekap semester**.
+
+### 3. **Mahasiswa**
+- **Melihat sesi absensi aktif** sesuai **mata kuliah yang diambil**.
+- **Memasukkan kode absensi** dari dosen.
+- **Mengunduh laporan absensi PDF** berdasarkan **filter mata kuliah**, dengan link hasil PDF tersedia di **Google Drive**.
 
 ---
 
